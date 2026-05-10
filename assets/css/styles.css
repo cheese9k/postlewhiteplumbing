@@ -569,3 +569,61 @@ body.nav-open .nav-toggle span::after { transform: translateY(-7px) rotate(-45de
   font: inherit;
 }
 .link-button:hover { color: var(--accent-dark); }
+
+/* ---------- Mobile CTA bar (split: Call + WhatsApp) ---------- */
+.mobile-cta {
+  display: none;
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 60;
+  background: linear-gradient(180deg, #ec8038 0%, #c95f1f 100%);
+  box-shadow: 0 -8px 24px rgba(0,0,0,0.22);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.mobile-cta-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 14px 12px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.97rem;
+  letter-spacing: 0.02em;
+  position: relative;
+  transition: background 0.15s ease;
+  -webkit-tap-highlight-color: rgba(255,255,255,0.18);
+}
+.mobile-cta-btn:hover,
+.mobile-cta-btn:active,
+.mobile-cta-btn:focus {
+  color: #fff;
+  text-decoration: none;
+  background: rgba(0,0,0,0.10);
+}
+.mobile-cta-btn:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: -3px;
+}
+.mobile-cta-btn svg { flex: none; }
+.mobile-cta .mobile-cta-btn + .mobile-cta-btn::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 12px; bottom: 12px;
+  width: 1px;
+  background: rgba(255,255,255,0.32);
+}
+
+/* Cookie banner — tighten on mobile (the flex-basis caused excess height) */
+@media (max-width: 859px) {
+  .cookie-banner-text { flex: 0 0 auto; }
+  .cookie-banner-text strong { font-size: 0.95rem; }
+  .cookie-banner-text p { font-size: 0.86rem; line-height: 1.45; margin-top: 4px; }
+  .cookie-banner { padding: 13px 14px; }
+  .cookie-banner-actions .btn { padding: 9px 14px; }
+
+  /* Show the new dual mobile CTA bar */
+  .mobile-cta { display: flex; align-items: stretch; }
+}
