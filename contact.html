@@ -18,30 +18,34 @@
 <meta property="og:image" content="https://www.postlewhiteplumbing.co.uk/assets/img/og-image.svg">
 
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="alternate" hreflang="en-GB" href="https://www.postlewhiteplumbing.co.uk/contact.html">
 <link rel="alternate" hreflang="x-default" href="https://www.postlewhiteplumbing.co.uk/contact.html">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="stylesheet" href="assets/css/styles.css">
 
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type":"ListItem","position":1,"name":"Home","item":"https://www.postlewhiteplumbing.co.uk/"},
-    {"@type":"ListItem","position":2,"name":"Contact","item":"https://www.postlewhiteplumbing.co.uk/contact.html"}
-  ]
-}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+  {"@type":"ListItem","position":1,"name":"Home","item":"https://www.postlewhiteplumbing.co.uk/"},
+  {"@type":"ListItem","position":2,"name":"Contact","item":"https://www.postlewhiteplumbing.co.uk/contact.html"}
+]}
 </script>
-
-<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) with Consent Mode v2 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QJ4YRCMSEJ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'analytics_storage': 'denied',
+    'wait_for_update': 500
+  });
   gtag('js', new Date());
   gtag('config', 'G-QJ4YRCMSEJ');
 </script>
+<script src="/assets/js/consent.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
@@ -158,6 +162,8 @@
           <li><a href="areas.html">Areas We Cover</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="https://www.facebook.com/Postlewhiteplumbing/" rel="noopener">Facebook</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="#" onclick="if(window.openCookieSettings)window.openCookieSettings();return false;">Cookie settings</a></li>
         </ul>
       </div>
       <div>
@@ -183,4 +189,6 @@
   Call 07902 025580
 </a>
 
-<script src="assets/js
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

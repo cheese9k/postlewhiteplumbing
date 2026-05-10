@@ -36,4 +36,11 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.postlewhiteplumbing.co.uk/contact.html" />
   </url>
+  <url>
+    <loc>https://www.postlewhiteplumbing.co.uk/privacy.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://www.postlewhiteplumbing.co.uk/privacy.html" />
+  </url>
 </urlset>
