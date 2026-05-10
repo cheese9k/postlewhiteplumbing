@@ -1,5 +1,5 @@
 /* =========================================================
-   Postlewhite Plumbing — site styles
+   Postlewhite Plumbing, site styles
    Mobile-first, accessible, single stylesheet.
    ========================================================= */
 
@@ -510,7 +510,7 @@ body.nav-open .nav-toggle span::after { transform: translateY(-7px) rotate(-45de
   .container { padding: 0 16px; }
 }
 
-/* Extra-small phones — drop subtitle to keep header clean */
+/* Extra-small phones, drop subtitle to keep header clean */
 @media (max-width: 380px) {
   .brand-name small { display: none; }
 }

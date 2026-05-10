@@ -1,4 +1,4 @@
-# Postlewhite Plumbing — Website
+# Postlewhite Plumbing - Website
 
 Static, SEO-focused, mobile-responsive site for **Postlewhite Plumbing Installations** (Macclesfield), built to deploy as a GitHub Pages site at **postlewhiteplumbing.co.uk**.
 
@@ -51,22 +51,22 @@ Static, SEO-focused, mobile-responsive site for **Postlewhite Plumbing Installat
 
 The site uses real details pulled from the public Facebook page where available. A few items to verify or replace:
 
-- **Gas Safe Register number** — set to **622530** in the hero card, every page footer, the About page, and the JSON-LD schema on the home page.
-- **Opening hours** — defaults are Mon–Fri 8–6, Sat 9–2, Sunday emergency only. Adjust in the page footers, the home hero card, the contact page, and the `openingHoursSpecification` JSON-LD on `index.html`.
-- **Reviews** — the home page now shows four real recommendations pulled from the Facebook page (Josh Lindsay, Joy Edwards, Tim Wilkinson-Hall, Jennifer Drinkwater). To add or rotate reviews, edit the `<article class="review">` blocks in the testimonials section of `index.html`. Real-time auto-pulling of Facebook reviews isn't reliable due to Meta API restrictions — manual refresh every few months is the most stable approach.
-- **Email** — currently `possplumboffice@gmail.com` (the Facebook page email). If you set up `info@postlewhiteplumbing.co.uk`, do a project-wide find/replace.
-- **OG image** — `assets/img/og-image.svg` is a generated placeholder. Replace with a 1200×630 PNG photo (`assets/img/og-image.png`) and update the `<meta property="og:image">` tags if you want a real photo in social shares.
-- **Favicon PNG** — only an SVG favicon is included. Add `apple-touch-icon.png` (180×180) to `assets/img/` for iOS bookmarks.
+- **Gas Safe Register number**, set to **622530** in the hero card, every page footer, the About page, and the JSON-LD schema on the home page.
+- **Opening hours**, defaults are Mon–Fri 8–6, Sat 9–2, Sunday emergency only. Adjust in the page footers, the home hero card, the contact page, and the `openingHoursSpecification` JSON-LD on `index.html`.
+- **Reviews**, the home page now shows four real recommendations pulled from the Facebook page (Josh Lindsay, Joy Edwards, Tim Wilkinson-Hall, Jennifer Drinkwater). To add or rotate reviews, edit the `<article class="review">` blocks in the testimonials section of `index.html`. Real-time auto-pulling of Facebook reviews isn't reliable due to Meta API restrictions, manual refresh every few months is the most stable approach.
+- **Email**, currently `possplumboffice@gmail.com` (the Facebook page email). If you set up `info@postlewhiteplumbing.co.uk`, do a project-wide find/replace.
+- **OG image**, `assets/img/og-image.svg` is a generated placeholder. Replace with a 1200×630 PNG photo (`assets/img/og-image.png`) and update the `<meta property="og:image">` tags if you want a real photo in social shares.
+- **Favicon PNG**, only an SVG favicon is included. Add `apple-touch-icon.png` (180×180) to `assets/img/` for iOS bookmarks.
 
 ## Editing tips
 
 - **Phone, email, WhatsApp** appear in the header CTA, hero card, every footer, and the sticky mobile call bar. To change, find/replace `07902 025580`, `+447902025580`, `possplumboffice@gmail.com` across the project.
-- **Add a new service area** — copy a card in `areas.html`, add a tag in `index.html` and a link in the footer if it's a major town.
-- **Add a new service** — copy one of the `<article id="…" class="service-block">` sections in `services.html`, then add a card to the home page services grid.
+- **Add a new service area**, copy a card in `areas.html`, add a tag in `index.html` and a link in the footer if it's a major town.
+- **Add a new service**, copy one of the `<article id="…" class="service-block">` sections in `services.html`, then add a card to the home page services grid.
 
 ## Local preview
 
-The site is plain static HTML — open `index.html` in a browser, or run any static server:
+The site is plain static HTML, open `index.html` in a browser, or run any static server:
 
 ```bash
 # Python
@@ -78,8 +78,4 @@ npx http-server -p 8080
 
 ## Browser support
 
-Modern evergreen browsers (Chrome, Firefox, Safari, Edge). No build step, no JS framework, no tracking. The CSS uses CSS variables and grid, both supported everywhere relevant for ~5+ years.
-
----
-
-© Postlewhite Plumbing Installations · Macclesfield, Cheshire
+Modern evergreen browsers (Chrome, Firefox, Safari, Edge). No build step, no JS

@@ -1,0 +1,12 @@
+/* TEAM */
+  Plumber: Lee
+  Site: Postlewhite Plumbing Installations
+  Location: Macclesfield, Cheshire, UK
+  Contact: 07902 025580
+  Facebook: https://www.facebook.com/Postlewhiteplumbing/
+
+/* SITE */
+  Last update: 2026-05
+  Standards: HTML5, CSS3
+  Components: Static HTML, no frameworks
+  Hosting: GitHub Pages
