@@ -51,9 +51,9 @@ Static, SEO-focused, mobile-responsive site for **Postlewhite Plumbing Installat
 
 The site uses real details pulled from the public Facebook page where available. A few items to verify or replace:
 
-- **Gas Safe Register number** — currently shown as "Gas Safe Registered Engineer" without a number. Add the actual number to the home page hero card and footer if you want it displayed publicly.
+- **Gas Safe Register number** — set to **622530** in the hero card, every page footer, the About page, and the JSON-LD schema on the home page.
 - **Opening hours** — defaults are Mon–Fri 8–6, Sat 9–2, Sunday emergency only. Adjust in the page footers, the home hero card, the contact page, and the `openingHoursSpecification` JSON-LD on `index.html`.
-- **Reviews** — three placeholder reviews on the home page, marked with HTML comments `PLACEHOLDER REVIEW`. Replace with real Facebook reviews (with the customer's permission) or remove the section.
+- **Reviews** — the home page now shows four real recommendations pulled from the Facebook page (Josh Lindsay, Joy Edwards, Tim Wilkinson-Hall, Jennifer Drinkwater). To add or rotate reviews, edit the `<article class="review">` blocks in the testimonials section of `index.html`. Real-time auto-pulling of Facebook reviews isn't reliable due to Meta API restrictions — manual refresh every few months is the most stable approach.
 - **Email** — currently `possplumboffice@gmail.com` (the Facebook page email). If you set up `info@postlewhiteplumbing.co.uk`, do a project-wide find/replace.
 - **OG image** — `assets/img/og-image.svg` is a generated placeholder. Replace with a 1200×630 PNG photo (`assets/img/og-image.png`) and update the `<meta property="og:image">` tags if you want a real photo in social shares.
 - **Favicon PNG** — only an SVG favicon is included. Add `apple-touch-icon.png` (180×180) to `assets/img/` for iOS bookmarks.
